@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node start.js",
+    "build": "npm run clean && tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint src",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [],
+  "author": "rkc91",
+  "license": "MIT",
+  "description": "Express.js backend for this test SPA project",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.27.0",
+    "@typescript-eslint/parser": "^8.27.0",
+    "eslint": "^9.22.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
