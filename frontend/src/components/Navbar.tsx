@@ -1,18 +1,34 @@
 import { NavLink } from "react-router-dom";
+import { Nav, Navbar, NavDropdown, Image } from "react-bootstrap";
+import '../styling/components/Navbar.css';
 
-const Navbar = () => {
+const MyNavbar = () => {
     return (
-    <nav>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/about'>About</NavLink>
-        <NavLink to='/contact-us'>Contact Us</NavLink>
-        <NavLink to='/events'>Guild Events</NavLink>
-        <NavLink to='/join-us'>Join Horizon Initiative</NavLink>
-        <NavLink to='/roster'>Guild Roster</NavLink>
-        <NavLink to='/store'>Guild Store</NavLink>
-        <NavLink to='/streams'>Live Streams</NavLink>
-    </nav>
+        <Navbar bg="dark" variant="dark" className="navbar">
+                <Navbar.Brand as={NavLink} to="/">
+                <Image src="./img/hi_logo.png" className="navbar-logo"/>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
+                        <NavDropdown title="About Us" id="about-us">
+                            <NavDropdown.Item as={NavLink} to="/about">About</NavDropdown.Item>
+                        </NavDropdown>
+                        <NavDropdown title="Join Us" id="join-us">
+                            <NavDropdown.Item as={NavLink} to='/join-us'>Join Horizon Initiative</NavDropdown.Item>
+                        </NavDropdown>
+                        <NavDropdown title="Community" id="community">
+                            <NavDropdown.Item as={NavLink} to='/events'>Guild Events</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to='/roster'>Guild Roster</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to='/streams'>Live Streams</NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link as={NavLink} to='/store'>Guild Store</Nav.Link>
+                        <Nav.Link as={NavLink} to='/contact-us'>Contact Us</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+        </Navbar>
     );
 }
 
-export default Navbar;
+export default MyNavbar;

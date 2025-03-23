@@ -9,13 +9,15 @@ import JoinUsPage from './pages/JoinUsPage';
 import RosterPage from './pages/RosterPage';
 import StorePage from './pages/StorePage';
 import StreamsPage from './pages/StreamsPage';
-import Navbar from './components/Navbar';
+import MyNavbar from './components/Navbar';
+
 import './styling/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App: React.FC = () => {
   return (
     <>
-      <Navbar />
+      <MyNavbar />
       <Routes>
         <Route path='/' element={<HomePage/>} />
         <Route path='/about' element={<AboutPage/>} />
