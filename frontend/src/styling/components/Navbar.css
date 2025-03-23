@@ -1,11 +1,28 @@
-.navbar {
-  width: 100%;
-  height: 10%;
-  padding: 1rem;
-  }
-  
-.navbar-logo {
-  padding: 1rem;
-  width: 5vw;
-  height: 5vw;
+@font-face {
+  font-family: 'Sakana';
+  src: url('../../assets/fonts/Sakana.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+.navbar {
+  height: 5rem;
+  font-family: 'Sakana', sans-serif;
+  font-size: 24px;
+}
+
+.navbar .navbar-brand {
+  box-sizing: content-box;
+  position: relative;
+  overflow: visible;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  top: 1.5rem;
+}
+
+.navbar-logo {
+  width: 14rem;
+  height: 100%; 
+  max-width: 100%;
+}
+
