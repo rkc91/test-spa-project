@@ -5,24 +5,80 @@
   font-style: normal;
 }
 
-.navbar {
-  height: 5rem;
+.navbar-expand-lg.fixed-top {
+  border-bottom: 0.1625rem solid;
+  border-color: rgb(196, 201, 214);
+  height: 6rem;
   font-family: 'Sakana', sans-serif;
-  font-size: 24px;
+  font-size: 34px;
+  position: relative;
+  display: flex;
+
 }
 
-.navbar .navbar-brand {
-  box-sizing: content-box;
+.navbar-brand {
+  display: contents;
   position: relative;
-  overflow: visible;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  top: 1.5rem;
+  height: auto;
+  width: auto;
 }
 
 .navbar-logo {
-  width: 14rem;
-  height: 100%; 
-  max-width: 100%;
+  position: relative;
+  align-self: flex-start;
+  height: 8rem;
+  margin: 0.5rem;
+  margin-left: 1rem;
+  width: auto;
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-link {
+  white-space: nowrap;
+}
+
+@media (max-width: 992px) {
+
+  .navbar-expand-lg.fixed-top {
+    font-size: 24px;
+    padding: 0rem;
+    margin: 0rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+  }
+  .navbar-logo {
+    position: sticky;
+    order: 2;
+    margin: auto;
+    margin-top: 4rem;
+    height: 8rem;
+    width: auto;
+  } 
+  .navbar-toggler {
+    position: absolute;
+    margin: 1rem;
+    order: 0; /* Moves collapse menu to the other side */
+  }
+  .navbar-collapse {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 0.1625rem solid;
+    position: absolute;
+    order: 1;
+    position: fixed;
+    font-size: 32px;
+    top: 5rem;
+    margin: 1rem;
+  }
+}

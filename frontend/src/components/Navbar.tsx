@@ -9,7 +9,7 @@ const MyNavbar = () => {
                 <Image src="./img/hi_logo_named.png" className="navbar-logo"/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse style={{justifyContent: "center"}} id="basic-navbar-nav">
                     <Nav>
                         <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
                         <NavDropdown title="About Us" id="about-us">
