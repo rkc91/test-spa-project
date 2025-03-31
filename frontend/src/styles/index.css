@@ -4,13 +4,25 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  
+  /* Base and Background */
+  --background-color: #03091b;
+  --text-color: #EAEAEA;
+
+  /* Main Palette */
+  --primary-color: #568cbe;      /* For primary actions, highlights */
+  --secondary-color: #122b61;    /* For secondary buttons or hover states */
+  --secondary-color-variant: #5278A3;
+
+  /* Accents */
+  --accent-color: #00C4FF;       /* Vibrant neon accent for interactive details */
+  --contrast-accent: #FF2D95;    /* Use sparingly for notifications or urgent cues */
 }
 
 a {
@@ -63,6 +75,6 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #f1e6e6;
   }
 }

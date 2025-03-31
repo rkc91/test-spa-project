@@ -3,8 +3,10 @@ import { Button } from "react-bootstrap";
 const HomePage = () => {
     return (
         <>
+        <section>
         <h1>Welcome to Horizon Initiatve Home Page!</h1>
         <Button>Test</Button>
+        </section>
         </>
     )
 };
