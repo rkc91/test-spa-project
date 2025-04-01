@@ -8,7 +8,18 @@ html, body {
 #root {
   width: 100%;
   height: 100%;
+  max-width: auto;
   color: var(--primary-color);
   background-color: var(--background-color);
+}
+
+.hero {
+  padding: 3rem 2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
 }
 

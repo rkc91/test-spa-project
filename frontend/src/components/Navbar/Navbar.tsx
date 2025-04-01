@@ -4,7 +4,7 @@ import './Navbar.css';
 
 const MyNavbar = () => {
     return (
-        <Navbar fixed="top" bg="dark" variant="dark" className="navbar" expand="lg">
+        <Navbar fixed="top" bg="dark" variant="dark" className="navbar" expand="xxl">
                 <Navbar.Brand as={NavLink} to="/">
                 <Image src="./img/hi_logo_named.png" className="navbar-logo"/>
                 </Navbar.Brand>

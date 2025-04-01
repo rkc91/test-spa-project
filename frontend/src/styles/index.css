@@ -12,12 +12,13 @@
 
   
   /* Base and Background */
-  --background-color: #03091b;
+  --background-color: #010207;
   --text-color: #EAEAEA;
 
   /* Main Palette */
   --primary-color: #568cbe;      /* For primary actions, highlights */
-  --secondary-color: #122b61;    /* For secondary buttons or hover states */
+  --secondary-color: #0c2458; 
+  --secondary-color-deep: #03060e;
   --secondary-color-variant: #5278A3;
 
   /* Accents */

@@ -39,7 +39,7 @@ const App: React.FC = () => {
         </Routes>
       </main>
       <footer>
-        <p>© 2025 Horizon Initiative. All rights reserved.</p> 
+        <p>© 2025 Ryan Casey. All rights reserved.</p> 
       </footer> 
     </>
   );
