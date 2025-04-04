@@ -78,6 +78,8 @@
   overflow: hidden;
   background-color: var(--secondary-color-deep);
   border-radius: 0 0 15px 15px;
+  margin: 0;
+  margin-top: -0.4rem;
 }
 
 .dropdown-item {

@@ -1,11 +1,19 @@
-import { Button } from "react-bootstrap";
+import HomePageCarousel from "./components/HomePageCarousel/HomePageCarousel.tsx";
 
-const HomePage = () => {
+interface HomePageProps {
+    carouselIndex : number;
+    onCarouselChange : (index : number) => void;
+}
+
+
+const HomePage = ( props : HomePageProps) => {
+    const { carouselIndex, onCarouselChange } = props;
     return (
         <>
         <section className="hero">
-        <h1>Welcome to Horizon Initiatve Home Page!</h1>
-        <Button>Test</Button>
+            <HomePageCarousel 
+            carouselIndex={carouselIndex}
+            onCarouselChange={onCarouselChange}/>
         </section>
         </>
     )

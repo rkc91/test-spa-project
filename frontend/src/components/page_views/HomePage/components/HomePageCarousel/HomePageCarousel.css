@@ -1,0 +1,8 @@
+.carousel {
+    margin: 1rem;
+    padding: 12rem;
+}
+
+.carousel-caption {
+    position: sticky;
+}
