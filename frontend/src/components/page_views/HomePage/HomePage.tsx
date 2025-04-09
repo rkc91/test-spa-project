@@ -1,4 +1,5 @@
 import HomePageCarousel from "./components/HomePageCarousel/HomePageCarousel.tsx";
+import ParallaxBackground from "./components/ParallaxBackground/ParallaxBackground.tsx";
 
 interface HomePageProps {
     carouselIndex : number;
@@ -11,9 +12,15 @@ const HomePage = ( props : HomePageProps) => {
     return (
         <>
         <section className="hero">
-            <HomePageCarousel 
-            carouselIndex={carouselIndex}
-            onCarouselChange={onCarouselChange}/>
+            <div className="parallax-wrapper">
+                <ParallaxBackground carouselIndex={carouselIndex}/>
+            </div>
+
+            <div className="carousel-wrapper">
+                <HomePageCarousel 
+                carouselIndex={carouselIndex}
+                onCarouselChange={onCarouselChange}/>
+            </div>
         </section>
         </>
     )

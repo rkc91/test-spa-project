@@ -18,7 +18,6 @@ import { useState } from 'react';
 
 
 
-
 const App: React.FC = () => {
 
   const [ carouselIndex, setCarouselIndex ] = useState(0);
