@@ -19,9 +19,9 @@ const ParallaxBackground = ( props : ParallaxBackgroundProps) => {
                 invertX: true,
                 invertY: true,
                 scalarX: 1,
-                scalarY: 1,
-                frictionX: 0.05,
-                frictionY: 0.05,
+                scalarY: 2,
+                frictionX: 0.025,
+                frictionY: 0.025,
             });
 
             // clean up on unmount
@@ -29,21 +29,42 @@ const ParallaxBackground = ( props : ParallaxBackgroundProps) => {
                 parallaxInstance.destroy();
             }
         }
-    });
+    }, []);
 
     return (
         <div id="scene" className="parallax-container">
-            <div data-depth="0.1" className="parallax-layer background-layer">
-                <img src="img/Space-BG.png"/>
+            <div data-depth="0.0" className="parallax-layer background-layer">
+                <img src="img/ParallaxSplashArt/Space.png"/>
             </div>
-            <div data-depth="0.3" className="parallax-layer moon-layer">
-                <img src="img/Moon.png"/>
+            <div data-depth="0.05" className="parallax-layer">
+                <img src="img/ParallaxSplashArt/Main Planet.png"/>
             </div>
-            <div data-depth="0.5" className="parallax-layer surface-layer">
-                <img src="img/Surface.png"/>
+            <div data-depth="0.1" className="parallax-layer">
+                <img src="img/ParallaxSplashArt/Sun Flare.png"/>
             </div>
-            <div data-depth="0.8" className="parallax-layer ship-layer">
-            <img src="img/Ships.png"/>
+            <div data-depth="0.112" className="parallax-layer">
+                <img src="img/ParallaxSplashArt/Small Planet 1.png"/>
+            </div>
+            <div data-depth="0.125" className="parallax-layer">
+                <img src="img/ParallaxSplashArt/Small Planet 2.png"/>
+            </div>
+            <div data-depth="0.15" className="parallax-layer">
+                <img src="img/ParallaxSplashArt/Small Planet 3.png"/>
+            </div>
+            <div data-depth="0.25" className="parallax-layer">
+                <img src="img/ParallaxSplashArt/Middle Ship.png"/>
+            </div>
+            <div data-depth="0.3" className="parallax-layer">
+                <img src="img/ParallaxSplashArt/Medium Planet.png"/>
+            </div>
+            <div data-depth="0.4" className="parallax-layer">
+                <img src="img/ParallaxSplashArt/Top Ship.png"/>
+            </div>
+            <div data-depth="0.5" className="parallax-layer">
+                <img src="img/ParallaxSplashArt/Left Ship.png"/>
+            </div>
+            <div data-depth="0.6" className="parallax-layer">
+                <img src="img/ParallaxSplashArt/Large Ship.png"/>
             </div>
         </div>
     );
