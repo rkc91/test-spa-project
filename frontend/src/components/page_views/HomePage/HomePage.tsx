@@ -10,7 +10,6 @@ interface HomePageProps {
 const HomePage = ( props : HomePageProps) => {
     const { carouselIndex, onCarouselChange } = props;
     return (
-        <>
         <section className="hero">
             <div className="parallax-wrapper">
                 <ParallaxBackground carouselIndex={carouselIndex}/>
@@ -22,7 +21,6 @@ const HomePage = ( props : HomePageProps) => {
                 onCarouselChange={onCarouselChange}/>
             </div>
         </section>
-        </>
     )
 };
 

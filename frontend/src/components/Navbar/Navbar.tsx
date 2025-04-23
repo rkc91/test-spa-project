@@ -4,11 +4,12 @@ import './Navbar.css';
 
 interface MyNavbarProps {
     handleCarouselIndexChange : (index: number) => void;
+    carouselIndex: number;
 }
 
 const MyNavbar = ( props : MyNavbarProps) => {
 
-    const { handleCarouselIndexChange } = props
+    const { handleCarouselIndexChange, carouselIndex } = props
 
     return (
         <Navbar fixed="top" bg="dark" variant="dark" className="navbar" expand="xxl">
@@ -18,11 +19,14 @@ const MyNavbar = ( props : MyNavbarProps) => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse style={{justifyContent: "center"}} id="basic-navbar-nav">
                     <Nav>
-                        <Nav.Link as={NavLink} to='/'className="me-3 p-0"
+                        <Nav.Link as={NavLink} to='/'
+                        className={"me-3 p-0" + (carouselIndex == 0 ? " active" : " non-active")}
                         onClick={() => {handleCarouselIndexChange(0)}}>Home</Nav.Link>
-                        <Nav.Link as={NavLink} to='/'className="me-3 p-0"
+                        <Nav.Link as={NavLink} to='/'
+                        className={"me-3 p-0" + (carouselIndex == 1 ? " active" : " non-active")}
                         onClick={() => {handleCarouselIndexChange(1)}}>About</Nav.Link>
-                        <Nav.Link as={NavLink} to='/' className="me-3 p-0"
+                        <Nav.Link as={NavLink} to='/' 
+                        className={"me-3 p-0" + (carouselIndex == 2 ? " active" : " non-active")}
                         onClick={() => {handleCarouselIndexChange(2)}}>Join Us</Nav.Link>
                         <NavDropdown title="Community" id="community" className="me-3 p-0">
                             <NavDropdown.Item as={NavLink} to='/events'>Guild Events</NavDropdown.Item>

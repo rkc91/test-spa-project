@@ -29,7 +29,7 @@ const App: React.FC = () => {
   return (
     <>
       <header>
-        <MyNavbar handleCarouselIndexChange={handleCarouselIndexChange} />
+        <MyNavbar handleCarouselIndexChange={handleCarouselIndexChange} carouselIndex={carouselIndex} />
       </header>
       <main>
         <Routes>
