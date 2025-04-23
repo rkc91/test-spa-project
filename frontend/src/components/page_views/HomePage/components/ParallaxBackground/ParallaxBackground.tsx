@@ -39,26 +39,26 @@ const ParallaxBackground = ( props : ParallaxBackgroundProps) => {
             <div data-depth="0.05" className="parallax-layer">
                 <img src="img/ParallaxSplashArt/Main Planet.png"/>
             </div>
-            <div data-depth="0.1" className="parallax-layer">
+            <div data-depth="0.05" className="parallax-layer">
                 <img src="img/ParallaxSplashArt/Sun Flare.png"/>
             </div>
-            <div data-depth="0.112" className="parallax-layer">
+            <div data-depth="0.1" className="parallax-layer">
                 <img src="img/ParallaxSplashArt/Small Planet 1.png"/>
             </div>
-            <div data-depth="0.125" className="parallax-layer">
+            <div data-depth="0.1" className="parallax-layer">
                 <img src="img/ParallaxSplashArt/Small Planet 2.png"/>
             </div>
-            <div data-depth="0.15" className="parallax-layer">
+            <div data-depth="0.1" className="parallax-layer">
                 <img src="img/ParallaxSplashArt/Small Planet 3.png"/>
             </div>
-            <div data-depth="0.25" className="parallax-layer">
+            <div data-depth="0.2" className="parallax-layer">
                 <img src="img/ParallaxSplashArt/Middle Ship.png"/>
             </div>
-            <div data-depth="0.3" className="parallax-layer">
+            <div data-depth="0.225" className="parallax-layer">
                 <img src="img/ParallaxSplashArt/Medium Planet.png"/>
             </div>
             <div data-depth="0.4" className="parallax-layer">
-                <img src="img/ParallaxSplashArt/Top Ship.png"/>
+                <img src="img/ParallaxSplashArt/Top ship.png"/>
             </div>
             <div data-depth="0.5" className="parallax-layer">
                 <img src="img/ParallaxSplashArt/Left Ship.png"/>
