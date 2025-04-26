@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Nav, Navbar, NavDropdown, Image, Button } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown, Image } from "react-bootstrap";
 import './Navbar.css';
 
 interface MyNavbarProps {

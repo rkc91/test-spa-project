@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Parallax from "parallax-js";
 import "./ParallaxBackground.css";
 
@@ -8,7 +8,7 @@ interface ParallaxBackgroundProps {
 
 const ParallaxBackground = ( props : ParallaxBackgroundProps) => {  
 
-    const { carouselIndex } = props;
+    const {  } = props;
 
     useEffect(() => {
         const scene = document.getElementById("scene");

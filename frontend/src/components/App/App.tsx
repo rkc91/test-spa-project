@@ -1,5 +1,5 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation, useLoaderData } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/index.css';
 import './App.css';
@@ -20,12 +20,26 @@ import { useState } from 'react';
 
 const App: React.FC = () => {
 
-  const [ carouselIndex, setCarouselIndex ] = useState(0);
+  const location = useLocation();
+
+  const [ carouselIndex, setCarouselIndex ] = useState<number>(() => {
+    const savedCarouselIndex = localStorage.getItem("carouselIndex");
+    return savedCarouselIndex !== null ? parseInt(savedCarouselIndex, 10) : 0;
+  });
   
   const handleCarouselIndexChange = ( index : number) => {
     setCarouselIndex(index);
     console.log("Carousel index changed: ", index);
+    localStorage.setItem("carouselIndex", index.toString());
   }
+
+  useEffect(() => {
+    // prevent 3 home page links from highlighting when not on splash page.
+    if (location.pathname !== "/") {
+      setCarouselIndex(-1);
+    }
+  }, [location]);
+
   return (
     <>
       <header>
