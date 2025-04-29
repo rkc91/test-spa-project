@@ -1,6 +1,20 @@
+.carousel-wrapper {
+    margin: 0;
+    padding: 0;
+    height: 75vh;
+}
 .carousel {
     margin: 1rem;
-    padding: 12rem;
+    padding: 8rem;
+    height: 70vh;
+}
+
+.carousel-control-prev {
+    justify-content: flex-start;
+}
+
+.carousel-control-next {
+    justify-content: flex-end;
 }
 
 .carousel-caption {

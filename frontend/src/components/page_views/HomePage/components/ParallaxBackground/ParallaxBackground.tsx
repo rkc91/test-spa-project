@@ -8,7 +8,7 @@ interface ParallaxBackgroundProps {
 
 const ParallaxBackground = ( props : ParallaxBackgroundProps) => {  
 
-    const {  } = props;
+    const {carouselIndex} = props;
 
     useEffect(() => {
         const scene = document.getElementById("scene");
